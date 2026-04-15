@@ -1,0 +1,15 @@
+{
+  "name": "@arcrouter/sdk",
+  "version": "0.1.0",
+  "description": "ArcRouter SDK — Pay-per-call AI inference on Arc Network with USDC and ERC-8183",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "viem": "^2.21.25"
+  },
+  "keywords": ["arc", "circle", "usdc", "ai", "agent", "x402", "erc-8183", "stablecoin"],
+  "license": "MIT"
+}

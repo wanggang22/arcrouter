@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body {
+  background: radial-gradient(ellipse 60% 30% at 50% 0%, rgba(0,212,255,0.10), transparent 70%), #07070b;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Inter", sans-serif;
+}
+
+@layer components {
+  .arc-card { @apply bg-panel border border-border rounded-2xl p-5; }
+  .arc-input { @apply w-full bg-bg/60 border border-border rounded-lg px-3 py-2 text-white placeholder:text-muted focus:outline-none focus:border-accent transition; }
+  .arc-btn { @apply px-4 py-2 rounded-lg font-semibold transition; }
+  .arc-btn-primary { @apply arc-btn bg-arc-gradient text-bg hover:opacity-90 active:scale-[0.98]; }
+  .arc-btn-secondary { @apply arc-btn bg-border text-white hover:bg-border/70; }
+  .arc-pill { @apply inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold; }
+}
